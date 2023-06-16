@@ -9,6 +9,13 @@ bool _is_full_of_true(bool *array, int size) {
 }
 
 // ~> stitch <~
+GameValues State::game;
 int main() {
    cout << "Hello testing ! :) Gl boooy" << endl;
+   State       state;
+   GameUtils::read_initial_inputs(state);
+   while (1){
+      GameUtils::read_inputs(state);
+      cout << "WAIT" << endl;
+   }
 }
